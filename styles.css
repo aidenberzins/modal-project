@@ -21,14 +21,25 @@ section {
   border: 3px solid black;
   margin: 10px;
   max-width: 250px;
+  padding: 0;
+  /*    */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-height: 160px;
 }
 
 img {
-  border-radius: 5px;
   width: 100%;
   margin: 0;
   padding: 0;
-  max-width: 500px;
+  max-width: 800px;
+}
+.card img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .modal {
@@ -43,6 +54,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.modal img {
+  border-radius: 5px;
 }
 .d-none {
   display: none;
