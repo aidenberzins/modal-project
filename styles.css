@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+section {
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 10px;
+  max-width: 250px;
+}
+
+img {
+  width: 100%;
+}
