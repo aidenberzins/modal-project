@@ -13,74 +13,81 @@
   </head>
   <body>
     <h1>Modal Project</h1>
-    <section>
-      <div class="modal d-none">
-        <img
-          src="https://cookiesandcups.com/wp-content/uploads/2013/05/vanillacupcakes-5.jpg"
-          alt="cupcakes"
-        />
+    <div class="modal d-none">
+      <div class="buttons">
+        <span class="controller" id="modal-close" onCLick="closeModal()">
+          Close
+        </span>
+        <span id="prev" class="controller" onCLick="prevSlide()">Prev</span>
+        <span id="next" class="controller" onCLick="nextSlide()">Next</span>
       </div>
+      <img
+        src="https://cookiesandcups.com/wp-content/uploads/2013/05/vanillacupcakes-5.jpg"
+        alt="cupcake alt attr"
+      />
+    </div>
+    <section>
       <div class="card" onCLick="openModal();currentSlide(0)">
         <img
           class="card-image"
           src="https://cookiesandcups.com/wp-content/uploads/2013/05/vanillacupcakes-5.jpg"
-          alt="cupcakes"
+          alt="cupcakes 0"
         />
       </div>
       <div class="card" onCLick="openModal();currentSlide(1)">
         <img
           class="card-image"
           src="https://www.biggerbolderbaking.com/wp-content/uploads/2017/09/1C5A0996.jpg"
-          alt="cupcakes"
+          alt="cupcakes 1"
         />
       </div>
       <div class="card" onCLick="openModal();currentSlide(2)">
         <img
           class="card-image"
           src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-margarita-cupcakes-horizontal-1521140944.jpg"
-          alt="cupcakes"
+          alt="cupcakes 2"
         />
       </div>
       <div class="card" onCLick="openModal();currentSlide(3)">
         <img
           class="card-image"
           src="https://i1.wp.com/jennyisbaking.com/wp-1c174-content/uploads/2018/07/DSC00847.jpg?resize=534%2C800&ssl=1"
-          alt="cupcakes"
+          alt="cupcakes 3"
         />
       </div>
       <div class="card" onCLick="openModal();currentSlide(4)">
         <img
           class="card-image"
           src="https://dam.kraftheinzcompany.com/adaptivemedia/rendition/584781_3000x2000.jpg?id=682e76e2f244c36c2d31085a834e352b162a8c89&ht=2000&wd=3000"
-          alt="cupcakes"
+          alt="cupcakes 4 "
         />
       </div>
       <div class="card" onCLick="openModal();currentSlide(5)">
         <img
           class="card-image"
           src="https://www.kingarthurflour.com/sites/default/files/styles/featured_image/public/2019-08/very-vanilla-cupcakes-with-easy-vanilla-frosting.jpg?itok=P2A6dJ-a"
-          alt="cupcakes"
+          alt="cupcakes 5"
         />
       </div>
       <div class="card" onCLick="openModal();currentSlide(6)">
         <img
           class="card-image"
           src="https://breadboozebacon.com/wp-content/uploads/2018/02/Pink-Asti-Cupcakes-2.jpg"
-          alt="cupcakes"
+          alt="cupcakes 6"
         />
       </div>
       <div class="card" onCLick="openModal();currentSlide(7)">
         <img
           class="card-image"
           src="https://www.twosisterscrafting.com/wp-content/uploads/2016/05/red-white-blue-mini-cupcakes-pinnable5-720x720.jpg"
-          alt="cupcakes"
+          alt="cupcakes 7"
         />
       </div>
       <div class="card" onCLick="openModal();currentSlide(8)">
         <img
           class="card-image"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRPLFS7fqiJ_44og5a4lykPbPExDb3S9NZQNdI4VP47WJd5_Wk-"
-          alt="cupcakes"
+          alt="cupcakes 8"
         />
       </div>
     </section>

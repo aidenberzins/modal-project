@@ -1,18 +1,32 @@
 const modal = document.querySelector(".modal");
 const image = document.querySelector(".card");
 
-modal.addEventListener("click", function() {
-  modal.classList.add("d-none");
-});
-
 function openModal() {
   modal.classList.remove("d-none");
 }
+function closeModal() {
+  modal.classList.add("d-none");
+}
 
-var slideIndex = 1;
+let slideIndex = 1;
+let slides = document.getElementsByClassName("card-image");
 
 const currentSlide = num => {
-  let dots = document.getElementsByClassName("card-image");
-  let url = dots[num].src;
+  let url = slides[num].src;
   modal.querySelector("img").src = url;
+  slideIndex = num;
+  return slideIndex;
 };
+
+function prevSlide() {
+  slideIndex--;
+  if (slideIndex < 0) {
+    slideIndex = slides.length - 1;
+  }
+  currentSlide(slideIndex);
+}
+
+function nextSlide() {
+  slideIndex++;
+  currentSlide(slideIndex);
+}

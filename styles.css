@@ -18,11 +18,10 @@ section {
 }
 .card {
   border-radius: 5px;
-  border: 3px solid black;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   margin: 10px;
   max-width: 250px;
   padding: 0;
-  /*    */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,4 +59,28 @@ img {
 }
 .d-none {
   display: none;
+}
+.buttons {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.controller {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+}
+#prev {
+  left: 0;
+}
+#next {
+  right: 0;
+}
+#modal-close {
+  top: 0;
+  right: 0;
 }
