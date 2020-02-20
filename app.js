@@ -15,6 +15,7 @@ const currentSlide = num => {
   let url = slides[num].src;
   modal.querySelector("img").src = url;
   slideIndex = num;
+  console.log(slideIndex);
   return slideIndex;
 };
 
@@ -27,6 +28,10 @@ function prevSlide() {
 }
 
 function nextSlide() {
-  slideIndex++;
+  if (slideIndex < slides.length - 1) {
+    slideIndex++;
+  } else {
+    slideIndex = 0;
+  }
   currentSlide(slideIndex);
 }
